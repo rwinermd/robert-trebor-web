@@ -3,7 +3,7 @@
 <section class="section container-fluid mt-n3 pb-3 hero-with-sides">
   <div class="row align-items-center justify-content-center g-4">
     <div class="col-lg-3 d-none d-lg-block text-center">
-      <img src="/ballast4.png" alt="" class="hero-side-img img-fluid rounded" loading="eager">
+      <img src="{{ "ballast4.png" | relURL }}" alt="" class="hero-side-img img-fluid rounded" loading="eager">
     </div>
     <div class="col-12 col-lg-6 text-center">
       <h1>{{ .Title }}</h1>
@@ -15,7 +15,7 @@
       {{ end }}
     </div>
     <div class="col-lg-3 d-none d-lg-block text-center">
-      <img src="/ballast5.png" alt="" class="hero-side-img img-fluid rounded" loading="eager">
+      <img src="{{ "ballast5.png" | relURL }}" alt="" class="hero-side-img img-fluid rounded" loading="eager">
     </div>
   </div>
 </section>
