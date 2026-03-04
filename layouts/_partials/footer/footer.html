@@ -1,0 +1,18 @@
+<footer class="footer text-muted">
+  <div class="container-{{ site.Params.doks.containerBreakpoint | default "lg" }}">
+    <div class="row align-items-center">
+      <div class="col text-lg-start">
+        <ul class="list-inline mb-0">
+          {{ range .Site.Menus.footer -}}
+            <li class="list-inline-item"><a class="text-muted text-decoration-none" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+          {{- end }}
+        </ul>
+      </div>
+      <div class="col-auto ms-auto text-end mt-2 mt-lg-0">
+        {{ with site.Params.footer }}
+        <span class="text-muted small">{{ . | safeHTML }}</span>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</footer>

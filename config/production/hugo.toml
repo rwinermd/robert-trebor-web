@@ -1,0 +1,3 @@
+# Overrides for production (e.g. GitHub Pages)
+# Set baseURL to your GitHub Pages URL: https://<your-username>.github.io/robert-trebor-web/
+baseurl = "https://YOUR_GITHUB_USERNAME.github.io/robert-trebor-web/"
