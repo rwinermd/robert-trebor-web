@@ -29,6 +29,11 @@
   url = "/tutorial/lorem/"
 
 [[main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[main]]
   name = "Blog"
   url = "/blog/"
   weight = 30

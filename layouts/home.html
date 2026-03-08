@@ -1,11 +1,8 @@
 {{ define "main" }}
-{{/* Hero section: ballast4 and ballast5 on left/right, name + tagline + quote in center */}}
+{{/* Hero: on large screens, ballast4 | text | ballast5 in one row; below lg, text full-width then 4 & 5 below */}}
 <section class="section container-fluid mt-n3 pb-3 hero-with-sides">
   <div class="row align-items-center justify-content-center g-4">
-    <div class="col-lg-3 d-none d-lg-block text-center">
-      <img src="{{ "ballast4.png" | relURL }}" alt="" class="hero-side-img img-fluid rounded" loading="eager">
-    </div>
-    <div class="col-12 col-lg-6 text-center">
+    <div class="col-12 col-lg-6 order-1 order-lg-2 text-center">
       <h1>{{ .Title }}</h1>
       {{ with .Params.lead }}<p class="lead">{{ . | safeHTML }}</p>{{ end }}
       {{ with .Params.heroQuote }}
@@ -14,7 +11,10 @@
       </blockquote>
       {{ end }}
     </div>
-    <div class="col-lg-3 d-none d-lg-block text-center">
+    <div class="col-6 col-lg-3 text-center order-2 order-lg-1">
+      <img src="{{ "ballast4.png" | relURL }}" alt="" class="hero-side-img img-fluid rounded" loading="eager">
+    </div>
+    <div class="col-6 col-lg-3 text-center order-3">
       <img src="{{ "ballast5.png" | relURL }}" alt="" class="hero-side-img img-fluid rounded" loading="eager">
     </div>
   </div>

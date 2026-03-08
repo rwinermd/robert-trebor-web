@@ -24,17 +24,13 @@
   }
 }
 
-// Header social icons: align vertically and consistent spacing
-#socialMenu.nav {
+// Header icon row: equal spacing between search, theme, social
+#socialMenu {
   align-items: center;
-  .nav-item {
-    display: flex;
-    align-items: center;
-  }
   .nav-link.social-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem; /* same as p-2 for equal spacing with search/theme */
   }
 }
